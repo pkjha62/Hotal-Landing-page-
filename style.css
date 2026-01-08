@@ -117,6 +117,71 @@ footer {
 }
 
 
+
+
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;
+}
+
+.testimonial-card h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.testimonial-card span {
+  font-size: 14px;
+  color: #777;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.stars {
+  font-size: 18px;
+  color: #f4c150;
+}
+
+
+
 /* ===============================
    RESPONSIVE DESIGN
 ================================ */
@@ -164,6 +229,36 @@ footer {
   .map iframe {
     height: 280px;
   }
+
+
+  /* Testimonials */
+   .testimonials h2 {
+    font-size: 24px; /* Smaller heading for mobile */
+  }
+  .testimonial-container {
+    grid-template-columns: 1fr; /* One card per row on phones */
+    gap: 20px;
+  }
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+  }
+  .testimonial-card h3 {
+    font-size: 16px;
+  }
+  .testimonial-card span {
+    font-size: 13px;
+  }
+  .testimonial-card p {
+    font-size: 13px;
+  }
+  .stars {
+    font-size: 16px;
+  }
+
 }
 
 /* Medium devices (tablets) */
@@ -195,5 +290,26 @@ footer {
   .map iframe {
     height: 350px;
   }
+
+
+  /* testimonial */
+  .testimonials h2 {
+    font-size: 28px; /* Slightly smaller heading */
+  }
+  .testimonial-card {
+    padding: 25px 15px;
+  }
+  .testimonial-card img {
+    width: 70px;
+    height: 70px;
+  }
+  .testimonial-card h3 {
+    font-size: 18px;
+  }
+  .testimonial-card p {
+    font-size: 14px;
+  }
+
+
 }
 
