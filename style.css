@@ -73,6 +73,10 @@ section {
   max-height: 82px;
 }
 
+.gallery{
+  /* text-align: center; */
+  padding: 25px;
+}
 .himage {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
